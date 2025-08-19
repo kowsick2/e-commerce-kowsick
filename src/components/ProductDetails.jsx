@@ -16,7 +16,7 @@ export default function ProductDetails() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`${BASE_URL}/api/products/${id}`);
+         const res = await axios.get(`${BASE_URL}/api/products/${"https: //ecommerce-sunil.onrender.com/api/products/123"}`);
         // Some APIs wrap data => res.data.data
         const prod = res.data?.data || res.data;
         setProduct(prod);
@@ -196,3 +196,4 @@ export default function ProductDetails() {
     </div>
   );
 }
+
